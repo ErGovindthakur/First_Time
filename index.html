@@ -30,10 +30,13 @@ padding: 18px 9px;
         nav ul li{
             list-style: none;
         }
+        .logo h1{
+            color:white;
+        }
         nav ul li a{
             text-decoration: none;
             font-size: 18px;
-            color: black;
+           color:white;
         }
         .both{
             display: flex;
@@ -103,13 +106,25 @@ margin-right: 10%;
             background-color: lightseagreen;
             color: white;
             font-weight: 700;
-            padding: 7px 9px;
+            padding: 9px 16px;
             border: none;
             border-radius: 5px;
             margin-top: 5%;
             margin-bottom: 5%;
             margin-left: 10%;
             margin-right: 1px;
+            
+        }
+        /* Adding something here for Small devices like smartphones */
+        @media (max-width:600px) {
+            .both{
+                display:flex;
+                flex-wrap: wrap;
+            }
+            .right{
+                display: flex;
+                background-color: green;
+            }
         }
     </style>
 </head>
@@ -134,7 +149,7 @@ margin-right: 10%;
     <section class="both">
         <div class="left">
 <p>Join <span>India's No-1</span> coding platform <br> to get bost in your carrer</p>
-<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt repellendus unde, architecto est mollitia autem illo et ullam facere accusantium provident maiores eius quos similique tempora explicabo consectetur. Nemo soluta maxime ex in assumenda facilis.</p>
+<p class="para">An online education platform is meant for delivery of educational content to students. The platform, unlike a textbook is an interactive medium where students can engage with the content. And therefore, these platforms are in high demand in schools and universities across the globe. Because every institute wants their students to understand the concepts and its implications in the real world</p>
 <button>Login-Now</button>
 <button>Show-More</button>
         </div>
@@ -152,8 +167,8 @@ margin-right: 10%;
 <li><a href="">Get certificate</a></li>
 
 </ul>
-<button>Login-Now</button>
-<button>Show-More</button>
+<button> &lt;Previous</button>
+<button>Next &gt;</button>
         </div>
     </section>
  </main>
